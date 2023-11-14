@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+@font-face {
+    font-family: 'NetflixSans_W_Bd';
+    src: url('../Fonts/NetflixSans_W_Bd.woff2');
+}
+
+@font-face {
+    font-family: 'Rg';
+    src: url('../Fonts/NetflixSans_W_Rg.woff2');
+}
+
+@font-face {
+    font-family: 'nf';
+    src: url('../Fonts/nf-icon-v1-93.woff');
+}
+
+//? Fontes
+$fonte-NetflixSans_W_Bd:'NetflixSans_W_Bd';
+$fonte-Rg:'Rg';
+$fonte-nf:'nf';
+$fonte-Josefin-San: 'Josefin Sans', sans-serif;
+$fonte-Roboto: 'Roboto', sans-serif;
+$fonte-Poppins: 'Poppins', sans-serif;
+$fonte-Carter: 'Carter One', cursive;
+$fonte-Rubik: 'Rubik', sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+    font-family: $fonte-Rg;
+}
+
+body {
+    background-color: #000;
+}

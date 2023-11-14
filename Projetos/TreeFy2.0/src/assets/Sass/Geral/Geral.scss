@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+//? Cores
+$primary: #00FFD1;
+$secundary: rgba(102, 102, 102, 0.13);
+$cor3: rgba(22, 20, 20, 0.733);
+$cor4: rgba(22, 20, 20, 0.863);
+
+$white: #fff;
+$black: #000;
+
+//? fontes
+$fonte-Quicksand: 'Quicksand', sans-serif;
+$fonte-Poppins: 'Poppins', sans-serif;
+$fonte-Carter: 'Carter One', cursive;
+$fonte-Rubik: 'Rubik', sans-serif;
+$fonte-Woff2: 'fontewoff2';
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: $fonte-Quicksand;
+}
+
+p {
+    margin: 0px;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    // background-image: linear-gradient(to top, rgb(17, 18, 20), rgb(40, 43, 46));
+    overflow-x: hidden;
+    
+    div#backgroundSite {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        background-position: center;
+        background-size: cover;
+        background-image: url('https://images.pexels.com/photos/4062200/pexels-photo-4062200.jpeg?cs=srgb&dl=pexels-erik-mclean-4062200.jpg&fm=jpg');
+    }
+    
+    div#backgroundSite2 {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.315);
+    }
+
+    div#root {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        z-index: 3;
+    }
+
+    //? Formatação global
+    input {
+        width: calc(100% - 15px);
+        height: 57px;
+        background-color: rgba(102, 102, 102, 0.13);
+        border: none;
+        padding-left: 15px;
+        color: $white;
+
+        &:focus {
+            outline: 0;
+            box-shadow: 0;
+        }
+    }
+
+    button {
+        border: none;
+
+        &:hover {
+            cursor: pointer;
+            scale: 1.05;
+        }
+
+        &:active {
+            scale: 1;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+}

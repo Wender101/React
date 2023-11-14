@@ -1,0 +1,49 @@
+@import './Geral.scss';
+
+nav {
+    width: 95%;
+    margin: auto;
+    height: auto;
+    padding: 31px;
+    font-family: $fonte-Rg;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+
+    ul {
+        height: auto;
+        display: flex;
+        align-items: center;
+        gap: 28px;
+
+        li {
+            cursor: pointer;
+
+            a {
+                font-size: 12.5px;
+                color: #fff;
+            }
+        }
+
+        .btnNav {
+            width: 24px;
+            height: 24px;
+        }
+
+        span {
+            font-size: 12.5px;
+            color: #fff;
+        }
+
+        img {
+            width: 92px;
+            height: 31px;
+
+            &.userPhoto {
+                width: 32px;
+                height: 32px;
+            }
+        }
+    }
+}

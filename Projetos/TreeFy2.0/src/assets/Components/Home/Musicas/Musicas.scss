@@ -1,0 +1,55 @@
+div.Musicas {
+    width: 100%;
+    height: 80px;
+    padding: 17px;
+    background-color: transparent;
+    margin-bottom: 12px;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.349);
+        cursor: pointer;
+    }
+    
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+
+        div {
+            display: flex;
+            gap: 14px;
+    
+            img.imgMusica {
+                width: 60px;
+                height: 60px;
+                border-radius: 7px;
+                object-fit: cover;
+            }
+    
+            div.sobreMusica {
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+                align-items: start;
+                gap: 0px;
+    
+                p {
+                    color: #fff;
+                    margin: 0px;
+                }
+        
+                span {
+                    font-size:.9em;
+                    color: #c6c8c988;
+                }
+            }
+        }
+    
+        div.containerHeart {
+            padding: 10px;
+            border-radius: 50%;
+            border: 1px solid #ffffff4f;
+        }
+    }
+}

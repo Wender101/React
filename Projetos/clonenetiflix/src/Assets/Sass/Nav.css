@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Carter+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: "NetflixSans_W_Bd";
+  src: url("../Fonts/NetflixSans_W_Bd.woff2");
+}
+@font-face {
+  font-family: "Rg";
+  src: url("../Fonts/NetflixSans_W_Rg.woff2");
+}
+@font-face {
+  font-family: "nf";
+  src: url("../Fonts/nf-icon-v1-93.woff");
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: #fff;
+  font-family: "Rg";
+}
+
+nav {
+  width: 95%;
+  margin: auto;
+  height: auto;
+  padding: 31px;
+  font-family: "Rg";
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+}
+nav ul {
+  height: auto;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+nav ul li {
+  cursor: pointer;
+}
+nav ul li a {
+  font-size: 12.5px;
+  color: #fff;
+}
+nav ul .btnNav {
+  width: 24px;
+  height: 24px;
+}
+nav ul span {
+  font-size: 12.5px;
+  color: #fff;
+}
+nav ul img {
+  width: 92px;
+  height: 31px;
+}
+nav ul img.userPhoto {
+  width: 32px;
+  height: 32px;
+}/*# sourceMappingURL=Nav.css.map */

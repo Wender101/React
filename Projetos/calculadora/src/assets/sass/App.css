@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body div#root {
+  min-height: 100vh;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Nunito", sans-serif;
+  color: #fff;
+}
+body div#root div#App {
+  width: 95%;
+  max-width: 300px;
+  border-radius: 20px;
+  background-color: #563F57;
+  overflow: hidden;
+}
+body div#root div#App div#screen {
+  width: 100%;
+  min-height: 45px;
+  padding: 40px 20px 20px;
+  position: relative;
+}
+body div#root div#App div#screen div#containerBolls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+body div#root div#App div#screen div#containerBolls div.boll {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+body div#root div#App div#screen div#containerBolls div.boll:nth-child(1) {
+  background-color: red;
+}
+body div#root div#App div#screen div#containerBolls div.boll:nth-child(2) {
+  background-color: yellow;
+}
+body div#root div#App div#screen div#containerBolls div.boll:nth-child(3) {
+  background-color: rgb(0, 255, 0);
+}
+body div#root div#App div#screen h1 {
+  width: calc(100% - 40px);
+  text-align: right;
+  font-size: 35px;
+  font-weight: 200;
+}
+body div#root div#App table#containerkeyboard {
+  width: 100%;
+  border-collapse: collapse;
+}
+body div#root div#App table#containerkeyboard td {
+  padding: 15px;
+  background-color: transparent;
+  color: #fff;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  border: 2px solid rgba(0, 0, 0, 0.1843137255);
+  text-align: center;
+  font-weight: 600;
+  background-color: #7F6A81;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+body div#root div#App table#containerkeyboard td.first_row {
+  background-color: #654F67;
+}
+body div#root div#App table#containerkeyboard td.last_col {
+  background-color: #F49E3F;
+}/*# sourceMappingURL=App.css.map */

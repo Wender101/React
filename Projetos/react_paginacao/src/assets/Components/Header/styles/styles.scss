@@ -1,0 +1,108 @@
+@import '../../../style/Geral.css';
+
+header {
+    width: 100%;
+    height: auto;
+    background-color: var(--yellow);
+    
+    ul {
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 20px 10px;
+
+        li {
+            &.mobile_model {
+                display: none;
+            }
+
+            &#input_search {
+                width: calc(100%);
+                max-width: 580px;
+                margin: auto;
+                background-color: var(--white);
+                display: flex;
+                align-items: center;
+                box-shadow: var(--shadow);
+
+
+                input {
+                    width: 100%;
+                    border: none;
+                    outline: none;
+                    font-size: 14px;
+                    padding: 10px;
+                    color: var(--lightGray);
+                    
+                    &::placeholder {
+                    }
+                }
+
+                div#container_icon_search {
+                    width: 45px;
+                    height: 35px;
+                    margin: 5px 0px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-left: 1px solid var(--darkGray);
+                    cursor: pointer;
+                }
+            }
+
+            &#patrocinios {
+                width: 380px;
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+                img {
+                    width: 85%;
+                    object-fit: contain;
+                }
+
+                .iconTheme {
+                    width: 25px;
+                    height: 25px;
+                    cursor: pointer;
+
+                    &#iconLight {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 717px) {
+    header {
+        ul {
+            li {
+
+                &.pc_model {
+                    display: none;
+                }
+
+                &.mobile_model {
+                    display: block;
+
+                    &#logo_mobile {
+                        width: 70px;
+                        
+                        img {
+                            width: 100%;
+                            object-fit: contain;
+                        }
+                    }
+
+                    #icon_menu {
+                        width: 30px;
+                    }
+                }
+            }
+        }
+    }
+}

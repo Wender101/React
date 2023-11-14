@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Carter+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Quicksand", sans-serif;
+}
+
+p {
+  margin: 0px;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+}
+body div#backgroundSite {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://images.pexels.com/photos/4062200/pexels-photo-4062200.jpeg?cs=srgb&dl=pexels-erik-mclean-4062200.jpg&fm=jpg");
+}
+body div#backgroundSite2 {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.315);
+}
+body div#root {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: 3;
+}
+body input {
+  width: calc(100% - 15px);
+  height: 57px;
+  background-color: rgba(102, 102, 102, 0.13);
+  border: none;
+  padding-left: 15px;
+  color: #fff;
+}
+body input:focus {
+  outline: 0;
+  box-shadow: 0;
+}
+body button {
+  border: none;
+}
+body button:hover {
+  cursor: pointer;
+  scale: 1.05;
+}
+body button:active {
+  scale: 1;
+}
+body button:focus {
+  outline: none;
+}
+
+body section#LoginPage {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to top, rgb(23, 25, 29), rgb(44, 49, 55));
+  overflow-x: hidden;
+}
+body section#LoginPage div.imgsFundoLogin {
+  position: absolute;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+body section#LoginPage div.imgsFundoLogin#imgFundo1 {
+  width: 280px;
+  height: 250px;
+  top: 20px;
+  left: 20px;
+  background-image: url("../../Imgs/Icons/fundo1.png");
+}
+body section#LoginPage div.imgsFundoLogin#imgFundo2 {
+  width: 590px;
+  height: 166px;
+  top: -10px;
+  right: -10px;
+  background-image: url("../../Imgs/Icons/fundo2.png");
+}
+body section#LoginPage div.imgsFundoLogin#imgFundo3 {
+  width: 280px;
+  height: 250px;
+  bottom: 0px;
+  right: 0px;
+  background-image: url("../../Imgs/Icons/fundo3.png");
+}
+body section#LoginPage div.imgsFundoLogin#imgFundo4 {
+  width: 300px;
+  height: 300px;
+  bottom: 0px;
+  left: 0px;
+  background-image: url("../../Imgs/Icons/fundo4.png");
+}
+body section#LoginPage article#localForm {
+  width: 95%;
+  max-width: 500px;
+  height: auto;
+  color: #fff;
+}
+body section#LoginPage article#localForm p#welcomeP {
+  margin: 0px;
+  width: 480px;
+  display: block;
+  margin: auto;
+}
+body section#LoginPage article#localForm img#logo {
+  width: 480px;
+  height: 110px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
+  margin: auto;
+  margin-bottom: 66px;
+}
+body section#LoginPage article#localForm div.inputs {
+  width: 100%;
+  height: auto;
+}
+body section#LoginPage article#localForm div.inputs div {
+  width: 100%;
+  position: relative;
+  margin-bottom: 43px;
+  border-radius: 17px;
+  overflow: hidden;
+}
+body section#LoginPage article#localForm div.inputs div.inputAnimation {
+  animation: 300ms inputAnimado infinite ease-in-out;
+}
+@keyframes inputAnimado {
+  50% {
+    margin-left: -5px;
+  }
+  75% {
+    margin-left: 5px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+body section#LoginPage article#localForm div.inputs div div {
+  width: 59px;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00FFD1;
+  border-radius: 0px;
+}
+body section#LoginPage article#localForm div.inputs div div.inputAnimation2 {
+  animation: 300ms inputAnimado2 infinite ease-in-out;
+}
+@keyframes inputAnimado2 {
+  50% {
+    background-color: red;
+  }
+}
+body section#LoginPage article#localForm div.inputs div div img {
+  width: 35px;
+  height: 35px;
+  display: block;
+}
+body section#LoginPage article#localForm p#esqueciMinhaSenha {
+  text-align: center;
+}
+body section#LoginPage article#localForm div.localBtns {
+  width: 100%;
+  height: auto;
+  margin-top: 85px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+body section#LoginPage article#localForm div.localBtns button {
+  width: 100%;
+  display: block;
+  border-radius: 17px;
+  padding: 10px 0px;
+  font-family: "Carter One", cursive;
+  font-size: 20px;
+  color: #fff;
+}
+body section#LoginPage article#localForm div.localBtns button#btnLogin {
+  background-color: #00FFD1;
+}
+body section#LoginPage article#localForm div.localBtns button#btnCadastro {
+  background-color: rgba(102, 102, 102, 0.13);
+}/*# sourceMappingURL=Login.css.map */

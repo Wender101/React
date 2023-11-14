@@ -1,0 +1,55 @@
+@import './Geral.scss';
+
+.localPopularesDaNetiflix {
+    width: 95%;
+    height: auto;
+    margin: 0px auto 120px;
+    
+    .localFimls {
+        width: 100%;
+        margin-top: 20px;
+        overflow: visible;
+
+        &::-webkit-scrollbar {
+            width: 0px;
+            height: 0px; /* Altura do scroll */
+        }
+        
+        .container {
+            display: inline-flex;
+            gap: 10px;
+            overflow: visible;
+
+
+            .movie {
+                width: 170px;
+                height: 250px;
+                background-color: #fff;
+                position: relative;
+                cursor: pointer;
+                border-radius: 5px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+
+                &:hover {
+                    transition: transform 200ms ease-in-out;
+                    transform: scale(1.5);
+                    z-index: 2;
+                }
+    
+                .iconNetiflix {
+                    width: 24px;
+                    height: 24px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-image: url('../Imgs/Icons/Logo.png');
+                    margin: 10px;
+                    position: absolute;
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}

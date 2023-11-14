@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Nunito", sans-serif;
+  background-image: linear-gradient(to bottom, rgb(42, 42, 46), rgb(31, 19, 56), rgb(0, 0, 0));
+  color: #fff;
+}
+body .App {
+  width: 100%;
+  max-width: 800px;
+  min-height: 100vh;
+  margin: auto;
+}
+body .App nav {
+  width: 70%;
+  margin: auto;
+  background-color: #3c1f7b;
+  border-radius: 2px;
+}
+body .App nav ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 4px;
+}
+body .App nav ul li {
+  width: 100%;
+  text-align: center;
+  padding: 8px 0px;
+  cursor: pointer;
+}
+body .App nav ul li#liPendente {
+  background-color: #272430;
+  border-radius: 4px;
+}
+body .App div#containerInputPesquisarNota {
+  width: calc(90% - 32px);
+  margin: 24px auto;
+  background-color: #ccc2fe;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+}
+body .App div#containerInputPesquisarNota #iconSearh {
+  width: 24px;
+  height: 24px;
+  color: #4f4f4f;
+  margin-left: 16px;
+}
+body .App div#containerInputPesquisarNota input {
+  width: 100%;
+  height: 40px;
+  color: #828282;
+  border: none;
+  padding: 12px 0px;
+  background-color: transparent;
+  outline: none;
+  font-family: "Nunito", sans-serif;
+  overflow: hidden;
+}
+body .App main {
+  width: calc(90% - 32px);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+body .App main div.msgPendente {
+  width: 100%;
+  background-color: #7e64ff;
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+body .App main div.msgPendente pre {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 16.8px */
+}
+body .App main div.msgPendente div.footerMsg {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body .App main div.msgPendente div.footerMsg span {
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 10px */
+}
+body .App main div.msgPendente div.footerMsg div.btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+body .App main div.msgPendente div.footerMsg div.btns button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+body .App div#novaMsg {
+  width: 100%;
+  height: 100vh;
+  top: 0px;
+  left: 0px;
+  position: fixed;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(5, 5, 5, 0.4039215686);
+}
+body .App div#novaMsg div {
+  width: 90%;
+  max-width: 500px;
+  background-color: #7E64FF;
+  padding: 20px;
+  border-radius: 10px;
+}
+body .App div#novaMsg div textarea {
+  width: 100%;
+  background-color: transparent;
+  color: #fff;
+  font-family: "Nunito", sans-serif;
+  border: none;
+  outline: none;
+  resize: none;
+}
+body .App div#novaMsg div textarea::-moz-placeholder {
+  color: #fff;
+}
+body .App div#novaMsg div textarea::placeholder {
+  color: #fff;
+}
+body .App div#novaMsg div textarea::-webkit-scrollbar {
+  width: 2px; /* Largura da barra de rolagem */
+}
+body .App div#novaMsg div div#containerBtns {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+body .App div#novaMsg div div#containerBtns button {
+  width: 100%;
+  padding: 10px 0px;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+}
+body .App div#novaMsg div div#containerBtns button:hover {
+  transition: 200ms scale ease-in-out;
+  scale: 1.05;
+}
+body .App div#novaMsg div div#containerBtns button#btnCancelar {
+  background-color: #272430;
+}
+body .App div#novaMsg div div#containerBtns button#btnSalvar {
+  background-color: #3C1F7B;
+}
+body .App button#adicionarMsg {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  color: #fff;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border: none;
+  background-color: #7e64ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+body .App button#adicionarMsg #plusIcon {
+  width: 70%;
+  height: 70%;
+}/*# sourceMappingURL=App.css.map */

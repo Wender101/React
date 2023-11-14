@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Carter+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Quicksand", sans-serif;
+}
+
+p {
+  margin: 0px;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+}
+body div#backgroundSite {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://images.pexels.com/photos/4062200/pexels-photo-4062200.jpeg?cs=srgb&dl=pexels-erik-mclean-4062200.jpg&fm=jpg");
+}
+body div#root {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: 3;
+}
+body input {
+  width: calc(100% - 15px);
+  height: 57px;
+  background-color: rgba(102, 102, 102, 0.13);
+  border: none;
+  padding-left: 15px;
+  color: #fff;
+}
+body input:focus {
+  outline: 0;
+  box-shadow: 0;
+}
+body button {
+  border: none;
+}
+body button:hover {
+  cursor: pointer;
+  scale: 1.05;
+}
+body button:active {
+  scale: 1;
+}
+body button:focus {
+  outline: none;
+}
+
+section#AddMusicPage {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to top, rgb(23, 25, 29), rgb(44, 49, 55));
+}
+section#AddMusicPage article {
+  width: calc(100% - 116px);
+  position: absolute;
+  right: 0px;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+section#AddMusicPage article h1 {
+  width: 95%;
+  max-width: 400px;
+  margin: 20px auto 30px;
+  text-align: center;
+  color: #fff;
+  font-family: "Carter One", cursive;
+}
+section#AddMusicPage article div#fromPostMusica {
+  width: 95%;
+  max-width: 800px;
+  display: block;
+  margin: auto;
+}
+section#AddMusicPage article div#fromPostMusica input {
+  width: 100%;
+}
+section#AddMusicPage article div#fromPostMusica p {
+  margin: 30px 0px 20px;
+}
+section#AddMusicPage article div#fromPostMusica div#localInputsUploadPostar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+section#AddMusicPage article div#fromPostMusica div#localInputsUploadPostar .inputUploads {
+  display: none;
+}
+section#AddMusicPage article div#fromPostMusica div#localInputsUploadPostar label {
+  width: 250px;
+  display: block;
+  text-align: center;
+  padding: 10px 0px;
+  font-size: 20px;
+  color: #fff;
+  background-color: rgba(102, 102, 102, 0.13);
+  margin-top: 50px;
+}
+section#AddMusicPage article div#fromPostMusica div#localInputsUploadPostar label:hover {
+  cursor: pointer;
+  scale: 1.05;
+}
+section#AddMusicPage article div#fromPostMusica div#localInputsUploadPostar label:active {
+  scale: 1;
+}
+section#AddMusicPage article div#fromPostMusica div#localInputsUploadPostar label:focus {
+  outline: none;
+}
+section#AddMusicPage article button#btnPostar {
+  width: 250px;
+  display: block;
+  text-align: center;
+  padding: 10px 0px;
+  font-family: "Carter One", cursive;
+  font-size: 20px;
+  color: #fff;
+  background-color: rgba(102, 102, 102, 0.13);
+  margin: 50px auto;
+}/*# sourceMappingURL=StyleAddMusic.css.map */

@@ -1,0 +1,83 @@
+@import '../../../style/Geral.css';
+header {
+  width: 100%;
+  height: auto;
+  background-color: var(--yellow);
+}
+header ul {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 20px 10px;
+}
+header ul li.mobile_model {
+  display: none;
+}
+header ul li#input_search {
+  width: 100%;
+  max-width: 580px;
+  margin: auto;
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  box-shadow: var(--shadow);
+}
+header ul li#input_search input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  padding: 10px;
+  color: var(--lightGray);
+}
+header ul li#input_search div#container_icon_search {
+  width: 45px;
+  height: 35px;
+  margin: 5px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid var(--darkGray);
+  cursor: pointer;
+}
+header ul li#patrocinios {
+  width: 380px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+header ul li#patrocinios img {
+  width: 85%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+header ul li#patrocinios .iconTheme {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+header ul li#patrocinios .iconTheme#iconLight {
+  display: none;
+}
+
+@media screen and (max-width: 717px) {
+  header ul li.pc_model {
+    display: none;
+  }
+  header ul li.mobile_model {
+    display: block;
+  }
+  header ul li.mobile_model#logo_mobile {
+    width: 70px;
+  }
+  header ul li.mobile_model#logo_mobile img {
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  header ul li.mobile_model #icon_menu {
+    width: 30px;
+  }
+}/*# sourceMappingURL=styles.css.map */

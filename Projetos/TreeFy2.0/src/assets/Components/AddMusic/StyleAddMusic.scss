@@ -1,0 +1,85 @@
+section#AddMusicPage {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to top, rgb(23, 25, 29), rgb(44, 49, 55));
+
+    article {
+        width: calc(100% - 116px);
+        position: absolute;
+        right: 0px;
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+
+        h1 {
+            width: 95%;
+            max-width: 400px;
+            margin: 20px auto 30px;
+            text-align: center;
+            color: #fff;
+            font-family: $fonte-Carter;
+        }
+
+        div#fromPostMusica {
+            width: 95%;
+            max-width: 800px;
+            display: block;
+            margin: auto;
+
+            input {
+                width: 100%;
+            }
+
+            p {
+                margin: 30px 0px 20px;
+            }
+
+            div#localInputsUploadPostar {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+
+                .inputUploads {
+                    display: none;
+                }
+
+                label {
+                    width: 250px;
+                    display: block;
+                    text-align: center;
+                    padding: 10px 0px;
+                    // font-family: $fonte-Carter;
+                    font-size: 20px;
+                    color: $white;
+                    background-color: $secundary;
+                    margin-top: 50px;
+
+                    &:hover {
+                        cursor: pointer;
+                        scale: 1.05;
+                    }
+
+                    &:active {
+                        scale: 1;
+                    }
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+        }
+
+        button#btnPostar {
+            width: 250px;
+            display: block;
+            text-align: center;
+            padding: 10px 0px;
+            font-family: $fonte-Carter;
+            font-size: 20px;
+            color: $white;
+            background-color: $secundary;
+            margin: 50px auto;
+        }
+    }
+}

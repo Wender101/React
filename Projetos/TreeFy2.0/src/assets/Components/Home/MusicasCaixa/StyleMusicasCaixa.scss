@@ -1,0 +1,34 @@
+div.MusicaCaixa {
+    width: 150px;
+    height: 220px;
+    color: #fff;
+    overflow: hidden;
+    border-radius: 0px 0px 0px 0px;
+    
+    div.imgMusica {
+        width: 100%;
+        height: 150px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    div.textoMusicasCaixa {
+        background-color: rgba(0, 0, 0, 0.623);
+        padding: 10px 10px;
+
+        h3 {
+            width: 100%;
+            font-size: 17px;
+            margin: 0px 0px 5px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    
+        p {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.486);
+        }
+    }
+}

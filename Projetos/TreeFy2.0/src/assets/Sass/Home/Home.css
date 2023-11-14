@@ -1,0 +1,158 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Carter+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Quicksand", sans-serif;
+}
+
+p {
+  margin: 0px;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+}
+body div#backgroundSite {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://images.pexels.com/photos/4062200/pexels-photo-4062200.jpeg?cs=srgb&dl=pexels-erik-mclean-4062200.jpg&fm=jpg");
+}
+body div#backgroundSite2 {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.315);
+}
+body div#root {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: 3;
+}
+body input {
+  width: calc(100% - 15px);
+  height: 57px;
+  background-color: rgba(102, 102, 102, 0.13);
+  border: none;
+  padding-left: 15px;
+  color: #fff;
+}
+body input:focus {
+  outline: 0;
+  box-shadow: 0;
+}
+body button {
+  border: none;
+}
+body button:hover {
+  cursor: pointer;
+  scale: 1.05;
+}
+body button:active {
+  scale: 1;
+}
+body button:focus {
+  outline: none;
+}
+
+/* ini: Preloader */
+#carregando {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  display: none;
+  justify-content: center;
+  background-color: rgba(22, 20, 20, 0.733);
+  align-items: center;
+  z-index: 10;
+}
+
+section.carregando > article {
+  width: 80%;
+  color: #fff;
+}
+
+.preloader .inner {
+  position: absolute;
+  top: 50%; /* centralizar a parte interna do preload (onde fica a animação)*/
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bolas > div {
+  display: inline-block;
+  background-color: #fff;
+  box-shadow: 2px 2px 3px #000;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  margin: 3px;
+  animation-fill-mode: both;
+  animation-name: animarBola;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.bolas > div:nth-child(1) {
+  animation-duration: 0.75s;
+  animation-delay: 0;
+}
+
+.bolas > div:nth-child(2) {
+  animation-duration: 0.75s;
+  animation-delay: 0.12s;
+}
+
+.bolas > div:nth-child(3) {
+  animation-duration: 0.75s;
+  animation-delay: 0.24s;
+}
+
+@keyframes animarBola {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  16% {
+    transform: scale(0.1);
+    opacity: 0.7;
+  }
+  33% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+/* end: Preloader */
+main {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: 1;
+}
+main section {
+  width: calc(100% - 86px);
+  height: 100vh;
+  position: absolute;
+  right: 0px;
+}
+main section.Pages {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: none;
+}/*# sourceMappingURL=Home.css.map */

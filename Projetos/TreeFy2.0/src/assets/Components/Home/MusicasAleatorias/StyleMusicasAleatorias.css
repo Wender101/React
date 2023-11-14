@@ -1,0 +1,13 @@
+article#MusicasAleatorias {
+  width: calc(100% - 106px);
+  position: absolute;
+  right: 0px;
+}
+article#MusicasAleatorias h1 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+article#MusicasAleatorias div#localMusicasAleatorias {
+  display: flex;
+  gap: 30px;
+}/*# sourceMappingURL=StyleMusicasAleatorias.css.map */

@@ -1,0 +1,94 @@
+.App {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(#121212, #212b46);
+    color: #fff;
+}
+
+.title {
+    font-size: 85px;
+    color: #fff;
+    animation:  flipTitle 1s ease-in-out;
+    text-align: center;
+}
+
+@keyframes flipTitle {
+    from {
+        transform: rotateX(90deg);
+    }
+    to {
+        transform: rotateX(0deg);
+    }
+}
+
+.containerInput {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    margin: 34px 0;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 1px 3px 8pc rgba(0, 0, 0, 0.5);
+}
+
+.containerInput > input {
+    background-color: transparent;
+    border: 0;
+    font-size: 20px;
+    color: #fff;
+    outline: none;
+    margin-right: 8px;
+}
+
+.containerInput > input::placeholder {
+    color: #f1f1f1;
+}
+
+.containerInput > button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 200ms ease-in-out;
+}
+
+.containerInput > button:hover {
+    transform: scale(1.2);
+}
+
+.containerInput > button:active {
+    opacity: 0.3;
+}
+
+.main {
+    width: 95%;
+    color: #000;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 8px;
+    text-align: left;
+    padding: 20px;
+}
+
+.main > h2 {
+    margin: 16px 0;
+    font-size: 39px;
+}
+
+main > span {
+    margin-bottom: 16px;
+}
+
+@media screen and (max-width: 620px) {
+    .title {
+        font-size: 60px;
+    }
+
+    .main > h2 {
+        font-size: 28px;
+    }
+}

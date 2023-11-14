@@ -1,0 +1,83 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #363E46;
+}
+body div#container_relogio {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border-top: 2px solid rgba(93, 102, 109, 0.7333333333);
+  border-left: 2px solid rgba(93, 102, 109, 0.7333333333);
+  background: linear-gradient(134deg, #3E464F 4.99%, #424A53 94.88%);
+  box-shadow: 13px 14px 12px -6px rgba(35, 40, 45, 0.5), -20px -20px 61px 0px rgba(72, 83, 92, 0.25), 19px 25px 92px -32px rgba(35, 40, 45, 0.35);
+}
+body div#container_relogio div#borda_relogio {
+  width: 87%;
+  height: 87%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: relative;
+  border-bottom: 2px solid rgba(93, 102, 109, 0.7333333333);
+  border-right: 2px solid rgba(93, 102, 109, 0.7333333333);
+  background: linear-gradient(249deg, #363E46 -12.81%, #2C343C 305.95%);
+  box-shadow: 10px 11px 30px -1px rgba(35, 40, 45, 0.5) inset, 7px 7px 8px 0px rgba(35, 40, 45, 0.25) inset, -12px -12px 30px 0px rgba(72, 83, 92, 0.3) inset;
+}
+body div#container_relogio div#borda_relogio div.linhas {
+  width: 4px;
+  height: 16px;
+  border-radius: 20px;
+  background: #5D666D;
+  position: absolute;
+}
+body div#container_relogio div#borda_relogio div.linhas#linha_12 {
+  top: 11px;
+  left: 50%;
+  transform: translate(50%);
+}
+body div#container_relogio div#borda_relogio div.linhas#linha_3 {
+  right: 11px;
+  top: 50%;
+  transform: translate(50%);
+  rotate: -90deg;
+}
+body div#container_relogio div#borda_relogio div.linhas#linha_6 {
+  bottom: 11px;
+  left: 50%;
+  transform: translate(50%);
+}
+body div#container_relogio div#borda_relogio div.linhas#linha_9 {
+  left: 11px;
+  top: 50%;
+  rotate: -90deg;
+  transform: translate(50%);
+}
+body div#container_relogio div#borda_relogio div#container_ponteiros {
+  width: 70%;
+  height: 70%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body div#container_relogio div#borda_relogio div#container_ponteiros .ponteiro {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+}
+body div#container_relogio div#borda_relogio div#container_ponteiros .ponteiro#ponteiro_segundos {
+  rotate: -75deg;
+}
+body div#container_relogio div#borda_relogio div#container_ponteiros .ponteiro#ponteiro_minutos {
+  rotate: 55deg;
+}
+body div#container_relogio div#borda_relogio div#container_ponteiros .ponteiro#ponteiro_hora {
+  width: 70%;
+}/*# sourceMappingURL=App.css.map */

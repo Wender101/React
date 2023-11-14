@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Carter+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: "NetflixSans_W_Bd";
+  src: url("../Fonts/NetflixSans_W_Bd.woff2");
+}
+@font-face {
+  font-family: "Rg";
+  src: url("../Fonts/NetflixSans_W_Rg.woff2");
+}
+@font-face {
+  font-family: "nf";
+  src: url("../Fonts/nf-icon-v1-93.woff");
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: #fff;
+  font-family: "Rg";
+}
+
+body {
+  background-color: #000;
+}
+
+.localPopularesDaNetiflix {
+  width: 95%;
+  height: auto;
+  margin: 0px auto 120px;
+}
+.localPopularesDaNetiflix .localFimls {
+  width: 100%;
+  margin-top: 20px;
+  overflow: visible;
+}
+.localPopularesDaNetiflix .localFimls::-webkit-scrollbar {
+  width: 0px;
+  height: 0px; /* Altura do scroll */
+}
+.localPopularesDaNetiflix .localFimls .container {
+  display: inline-flex;
+  gap: 10px;
+  overflow: visible;
+}
+.localPopularesDaNetiflix .localFimls .container .movie {
+  width: 170px;
+  height: 250px;
+  background-color: #fff;
+  position: relative;
+  cursor: pointer;
+  border-radius: 5px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.localPopularesDaNetiflix .localFimls .container .movie:hover {
+  transition: transform 200ms ease-in-out;
+  transform: scale(1.5);
+  z-index: 2;
+}
+.localPopularesDaNetiflix .localFimls .container .movie .iconNetiflix {
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../Imgs/Icons/Logo.png");
+  margin: 10px;
+  position: absolute;
+  background-color: transparent;
+}/*# sourceMappingURL=populares.css.map */
